@@ -1,0 +1,53 @@
+.Nav {
+    background-color: #353a47;
+    height: 108px;
+    display: flex;
+    align-items: center;
+ justify-content: space-between;
+}
+
+
+
+input{
+width: 250px;
+height: 30px;
+left: 916px;
+top: 35px;
+
+border-radius: 25px;
+}
+
+h2{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+display: flex;
+align-items: center;
+
+color: #FFFFFF;
+}
+
+.container2{
+    display: flex;
+    margin-right: 60px;
+}
+
+.container2 img {
+    margin: 0 30px;
+}
+
+.container1 {
+    display: flex;
+    margin-left: 20px;
+}
+
+.container1 h2 {
+    margin-left: 40px;
+}
+
+#loopa {
+    position: relative;
+    left: -64px;
+}

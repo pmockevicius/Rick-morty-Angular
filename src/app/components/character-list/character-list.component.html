@@ -1,0 +1,44 @@
+<app-nav-bar (inputValue)="handleInputValue($event)"></app-nav-bar>
+
+<div class="container" >
+<div *ngFor="let character of characters | slice:0:15 | searchPipe: searchTerm">
+    <div class="card" id="movable-div" (click)="onOpenDialogClick(character.name, character.id, character.image )">
+        <img src={{character.image}} alt="">
+        <p>{{character.name}}</p>
+        <p>id: {{character.id}}</p>
+        
+    </div>
+</div>
+
+</div>
+
+<div class="btn-container">
+
+    
+<div >
+    <div class="pages-container">
+        <div [style.opacity]="prevPage === null ? '20%' : '100%'">
+    <svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg"  (click)="prevClicked(prevPage)">
+        <path  d="M12.5 25.5L0 13L12.5 0.5L14.25 2.28125L3.53125 13L14.25 23.7188L12.5 25.5Z" fill="black"/>
+        </svg>
+    </div>
+
+
+    <span class="pages">Página {{this.pageNumber}} </span> 
+<div>
+<svg width="15" height="26" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg" (click)="nextClicked(nextPage)">
+<path d="M2.5 25.5L15 13L2.5 0.5L0.75 2.28125L11.4688 13L0.75 23.7188L2.5 25.5Z" fill="black"/>
+</svg>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+    

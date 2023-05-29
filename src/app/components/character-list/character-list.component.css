@@ -1,0 +1,50 @@
+.card {
+    flex-wrap: wrap;
+    background-color: #353a47;
+    width: 150px;
+    height: 230px;
+    margin: 35px;
+    border-radius: 25px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+  }
+
+
+img{
+    width: 150px;
+    border-radius: 25px 25px 0 0;
+    transform: translate(0px,-1px);
+}
+
+p{
+    margin: 5px;
+    margin-left: 10px;
+    color: white;
+}
+
+.pages {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pages-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 9%;
+}
+
+#movable-div {
+    transition: transform 0.3s ease;
+  }
+  
+  #movable-div:hover {
+    transform: translate(10px, 10px);
+  }
+  
