@@ -11,12 +11,12 @@ p, h2  {
     height: 450px;
     width: 650px;
     display: flex;
-    justify-content: center;
-   
+    justify-content: center; 
 }
 
 img {
     height: 100%;
+   
     
 }
 
@@ -32,3 +32,16 @@ img {
     background: transparent !important;
     border-radius: 25px;
 }
+
+
+@media only screen and (max-width: 1000px) {
+    .dialogContainber{
+        background-color: #353a47;
+        border-radius: 25px 25px 0 0 ;
+        height: 350px;
+        width: 350px;
+        display: flex;
+        justify-content: center; 
+        
+    }
+    }

@@ -16,8 +16,6 @@ export class DialogComponent {
   }
 
   ngOnInit() {
-    // will log the entire data object
-    console.log("here",this.data)
   }
 
 }

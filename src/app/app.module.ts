@@ -10,12 +10,12 @@ import { SearchPipePipe } from './pipes/search-pipe.pipe';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DialogComponent } from './components/dialog/dialog.component';
-
-
 import { MatDialogModule} from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
 
 
 
@@ -36,6 +36,7 @@ import {TranslateHttpLoader} from '@ngx-translate/http-loader';
     BrowserAnimationsModule,
     MatDialogModule,
     TranslateModule,
+    MatCardModule,
     TranslateModule.forRoot({
       defaultLanguage: 'en',
       loader: {
