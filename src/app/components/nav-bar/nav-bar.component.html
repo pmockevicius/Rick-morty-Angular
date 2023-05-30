@@ -13,8 +13,12 @@
         (keyup)="getInputValue(box.value)"
         placeholder="{{'search' | translate }}"  >
         <img id="loopa" src="./assets/images/Loopa.svg" alt="">
-        <img (click)="switchLanguage('en')" src="./assets/images/EN.svg" alt="" >
+        <div class="en-wrapper" [style.opacity]="langSelected === 'en' ? '50%' : '100%'" >
+            <img (click)="switchLanguage('en')" src="./assets/images/EN.svg" alt="" >
+        </div>
+        <div class="es-wrapper" [style.opacity]="langSelected === 'es' ? '50%' : '100%'">
         <img (click)="switchLanguage('es')" src="./assets/images/ES.svg" alt="">
+    </div>
     </div>
 </div>
 

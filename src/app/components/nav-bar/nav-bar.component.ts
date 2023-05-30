@@ -8,6 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavBarComponent {
 
+  langSelected: string = "en"
+
   constructor(private translateService: TranslateService) {
     this.translateService.setDefaultLang('en'); // Set the default language
   }
@@ -18,6 +20,8 @@ export class NavBarComponent {
   }
 
   switchLanguage(lang: string) {
+    this.langSelected = lang
     this.translateService.use(lang); // Switch to the specified language
+    console.log(this.langSelected)
   }
 }

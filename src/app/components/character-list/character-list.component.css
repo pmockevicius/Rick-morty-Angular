@@ -1,8 +1,8 @@
 .card {
     flex-wrap: wrap;
     background-color: #353a47;
-    width: 150px;
-    height: 230px;
+    width: 195px;
+    height: 250px;
     margin: 35px;
     border-radius: 25px;
 }
@@ -16,7 +16,8 @@
 
 
 img{
-    width: 150px;
+    width: 195px;
+    height: 180px;
     border-radius: 25px 25px 0 0;
     transform: translate(0px,-1px);
 }
@@ -48,4 +49,16 @@ p{
     transform: translate(10px, 10px);
   }
 
+  .card-container{
+    display: flex;
+    justify-content: center;
+  }
 
+  @media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        grid-auto-rows: minmax(10px, auto);
+      }
+  }

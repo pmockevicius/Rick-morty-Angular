@@ -11,8 +11,8 @@
 input{
 width: 250px;
 height: 30px;
-left: 916px;
-top: 35px;
+/* left: 916px;
+top: 35px; */
 
 border-radius: 25px;
 }
@@ -35,19 +35,27 @@ color: #FFFFFF;
 }
 
 .container2 img {
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 .container1 {
     display: flex;
     margin-left: 20px;
+    margin-bottom: 0px;
 }
 
 .container1 h2 {
     margin-left: 40px;
+    margin-bottom: 0px;
 }
 
 #loopa {
     position: relative;
     left: -64px;
 }
+
+.es-wrapper, .en-wrapper{
+    display: flex;
+    align-items: center;
+}
+

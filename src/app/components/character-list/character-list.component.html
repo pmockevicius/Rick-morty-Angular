@@ -1,7 +1,7 @@
 <app-nav-bar (inputValue)="handleInputValue($event)"></app-nav-bar>
 
 <div class="container" >
-<div *ngFor="let character of characters | slice:0:15 | searchPipe: searchTerm">
+<div class="card-container" *ngFor="let character of characters | slice:0:15 | searchPipe: searchTerm">
     <div class="card" id="movable-div" (click)="onOpenDialogClick(character.name, character.id, character.image )">
         <img src={{character.image}} alt="">
         <p>{{character.name}}</p>
