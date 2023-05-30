@@ -62,7 +62,9 @@ export class CharacterListComponent {
   this.imageForDialog = image
   this.idForDialog = id
 
-  this.dialog.open(DialogComponent, {data: {
+  this.dialog.open(DialogComponent, 
+    { panelClass: 'bg-color',
+    data: {
     name: this.nameForDialog,
     image: this.imageForDialog,
     id: this.idForDialog

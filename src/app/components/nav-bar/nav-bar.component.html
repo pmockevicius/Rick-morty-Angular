@@ -11,10 +11,10 @@
         <input type="text" 
         #box 
         (keyup)="getInputValue(box.value)"
-        placeholder="Search"  >
+        placeholder="{{'search' | translate }}"  >
         <img id="loopa" src="./assets/images/Loopa.svg" alt="">
-        <img src="./assets/images/EN.svg" alt="">
-        <img src="./assets/images/ES.svg" alt="">
+        <img (click)="switchLanguage('en')" src="./assets/images/EN.svg" alt="" >
+        <img (click)="switchLanguage('es')" src="./assets/images/ES.svg" alt="">
     </div>
 </div>
 

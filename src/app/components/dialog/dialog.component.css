@@ -7,7 +7,7 @@ p, h2  {
 
 .dialogContainber{
     background-color: #353a47;
-    /* border-radius: 25px 25px 0 0 ; */
+    border-radius: 25px 25px 0 0 ;
     height: 450px;
     width: 650px;
     display: flex;
@@ -22,4 +22,13 @@ img {
 
 .infoContainer{
     height: 100px;
+}
+
+.mat-mdc-dialog-surface{
+    background: transparent !important;
+}
+
+.mat-mdc-dialog-container .mdc-dialog__surface {
+    background: transparent !important;
+    border-radius: 25px;
 }
